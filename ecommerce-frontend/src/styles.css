@@ -1,0 +1,76 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f7fa;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Centers container vertically */
+}
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.logo-text {
+  text-align: center;
+  font-size: 48px;
+  font-family: 'Cinzel Decorative', serif; /* Decorative font */
+  color: #bfa937; /* Gold */
+  margin-bottom: 30px;
+  position: relative;
+}
+
+/* underline effect */
+.logo-text::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #bfa937;
+  margin: 8px auto 0;
+}
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #f0b429;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d99816;
+}
+
+p {
+  text-align: center;
+  margin-top: 20px;
+  color: #666;
+}
+
+a {
+  color: #f0b429;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
