@@ -43,12 +43,18 @@ function Login() {
           placeholder="Enter Your Password"
           value={formData.password}
           onChange={handleChange}
+          id="entpss"
           required
         />
-        <button type="submit">Login</button>
+        <p id="notremember">
+          <Link to="" id="notremember2">Forgot Password</Link>
+        </p>
+        <button type="submit" id="login">Login</button>
+        <button type="submit" id="loginwG">Login With Google</button>
+        <button type="submit" id="loginwP">Login With Phone</button>
 
-        <p>
-          New here? <Link to="/register">Register</Link>
+        <p id="to-signup">
+          <Link to="/register" id="to-signup">New here? Register</Link>
         </p>
       </form>
     </div>
