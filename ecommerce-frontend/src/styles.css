@@ -16,19 +16,29 @@ body {
   height: 100vh; /* Centers container vertically */
 }
 
-.container {
+.lcontainer {
   max-width: 400px;
   width: 100%;
   padding: 40px;
   background: #ffc68d3f;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  height: 55vh;
+  height: 58vh;
+}
+
+.rcontainer {
+  max-width: 400px;
+  width: 100%;
+  padding: 40px;
+  background: #ffc68d3f;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  height:63vh;
 }
 
 .logo-text {
   text-align: center;
-  font-size: 48px;
+  font-size: 50px;
   font-family: 'Ananda Namaste', cursive; /* Decorative font */
   color: #bfa937; /* Gold */
   margin-bottom: 30px;
@@ -58,6 +68,12 @@ input {
   margin-top: 10px;
 }
 
+button{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
 #login {
   width: 100%;
   padding: 12px;
@@ -68,6 +84,7 @@ input {
   border-radius: 6px;
   cursor: pointer;
   margin-top: 26px;
+  height: 50px;
 }
 
 #loginwG {
@@ -79,7 +96,8 @@ input {
   border: 2px solid black;   /* border */
   border-radius: 6px;        /* rounded corners */
   cursor: pointer;
-  margin-top: 26px;
+  margin-top: 50px;
+  height: 48px;
 }
 
 
@@ -93,6 +111,7 @@ input {
   border-radius: 6px;        /* rounded corners */
   cursor: pointer;
   margin-top: 26px;
+  height: 50px;
 }
 
 button:hover {
@@ -101,9 +120,11 @@ button:hover {
 
 p{
   text-align: center;
+  margin: 0;
+  margin-top: 3px;
 }
 
-#to-signup {
+#to-signup,#to-login {
   margin-top: 20px;
   color: #000000;
   text-decoration: none;

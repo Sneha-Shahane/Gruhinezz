@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import "./styles.css";
+import googleLogo from "./icons/google.png";
 
 function Register() {
   const [formData, setFormData] = useState({ username: "", email: "", password: "" });
@@ -23,7 +24,7 @@ function Register() {
   };
 
   return (
-    <div className="container">
+    <div className="rcontainer">
       <div className="logo-text">gruhinezz</div>
       <form onSubmit={handleSubmit}>
         <input
@@ -48,12 +49,24 @@ function Register() {
           placeholder="Enter Your Password"
           value={formData.password}
           onChange={handleChange}
+          id="entpss"
           required
-        />
-        <button type="submit">Register</button>
-        <p>
-          Already have an account? <Link to="/login">Login</Link>
+        /><button type="submit" id="login"><p>Register</p></button>
+        <button type="button" id="loginwG">
+                  <p>Sing-Up With Google</p>
+                  <img
+                    src={googleLogo}
+                    alt="Google logo"
+                    width="28"
+                    height="28"
+                    style={{ marginLeft: "5px" }}
+                  />
+                </button><button type="submit" id="loginwP"><p>Sing-Up With Phone</p></button>
+
+        <p id="to-signup">
+          <Link to="/login" id="to-login">Already have an account</Link>
         </p>
+
       </form>
     </div>
   );

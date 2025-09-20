@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import "./styles.css";
+import googleLogo from "./icons/google.png";
 
 function Login() {
   const [formData, setFormData] = useState({ email: "", password: "" });
@@ -23,7 +24,7 @@ function Login() {
   };
 
   return (
-    <div className="container">
+    <div className="lcontainer">
       {/* Logo Text */}
       <div className="logo-text">gruhinezz</div>
 
@@ -50,8 +51,17 @@ function Login() {
           <Link to="" id="notremember2">Forgot Password</Link>
         </p>
         <button type="submit" id="login">Login</button>
-        <button type="submit" id="loginwG">Login With Google</button>
-        <button type="submit" id="loginwP">Login With Phone</button>
+        <button type="button" id="loginwG">
+          <p>Login With Google</p>
+          <img
+            src={googleLogo}
+            alt="Google logo"
+            width="28"
+            height="28"
+            style={{ marginLeft: "5px" }}
+          />
+        </button>
+        <button type="submit" id="loginwP"><p>Login With Phone</p></button>
 
         <p id="to-signup">
           <Link to="/register" id="to-signup">New here? Register</Link>
